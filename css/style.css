@@ -79,13 +79,13 @@ nav a{
   z-index: 1;
 
   /* Requirement 3a code here*/
-  position:relative;
-  bottom: 40px;
+  position:absolute;
+  top: -40px;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
-    bottom: 0px;
+    top: 0px;
 }
 
 
@@ -107,7 +107,7 @@ nav a{
 /* Remainder of requirements here: */
 
 header{
-  background: url(../images/header.jpg);
+  background: url(../images/header.jpg) no-repeat;
 
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
@@ -179,9 +179,9 @@ header{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  margin: auto;
-  /* Your code here */
 
+  /* Your code here */
+  align-self: center;
 }
 
 @media screen and (min-width: 800px){
